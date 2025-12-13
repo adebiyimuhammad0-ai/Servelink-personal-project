@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import Avatar from '@mui/material/Avatar'
 import Chip from '@mui/material/Chip'
+import { Navigate } from 'react-router-dom'
 
 export default function Hero() {
   return (
@@ -55,10 +56,10 @@ export default function Hero() {
             flexWrap: 'wrap'
           }}
         >
-          <Button variant="contained" size="large">
+          <Button variant="contained" size="large"onClick={() => Navigate('/service')}>
             Find Services
           </Button>
-          <Button variant="outlined" size="large">
+          <Button variant="outlined" size="large" onClick={() => Navigate('/join')}>
             Offer Your Skills
           </Button>
         </Box>
